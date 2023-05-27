@@ -19,9 +19,9 @@ function Home () {
     }, [])
 
     function randomDish() {
-        let featuredDish = 0;
+        // let featuredDish = 0;
         if (foods) {
-            featuredDish = Math.floor(Math.random() * (foods.length))
+            const featuredDish = Math.floor(Math.random() * (foods.length))
             console.log(featuredDish)
             return (
                 <>
@@ -34,7 +34,7 @@ function Home () {
         } else <h2>Loading...</h2>
 
     }
-    console.log(foods)
+    // console.log(featuredDish)
     
     return(
         <>
