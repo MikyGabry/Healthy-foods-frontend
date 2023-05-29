@@ -13,6 +13,7 @@ function Home () {
             console.log(err)
         }
     }
+    console.log(foods)
 
     useEffect(() =>{
         fetchFoods();
@@ -22,7 +23,7 @@ function Home () {
         // let featuredDish = 0;
         if (foods) {
             const featuredDish = Math.floor(Math.random() * (foods.length))
-            console.log(featuredDish)
+            // console.log(featuredDish)
             return (
                 <>
                 <h2>{foods[featuredDish].dishName}</h2>
